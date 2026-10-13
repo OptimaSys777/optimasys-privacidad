@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · OptimaSys-HENA Ticket-to-Sheet</title>
+<meta name="description" content="Qué datos usa Ticket-to-Sheet, para qué los usa y cómo se pueden eliminar.">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<main>
+  <p><a href="index.html">← Inicio</a></p>
+  <h1>Política de privacidad</h1>
+  <p class="suave">OptimaSys-HENA · Ticket-to-Sheet · Última actualización: 13 de octubre de 2026</p>
+
+  <h2>1. Quién es responsable</h2>
+  <p>OptimaSys-HENA ("la empresa") opera Ticket-to-Sheet para uso interno. Para cualquier duda o solicitud sobre tus datos escribe a <a href="mailto:h.ossa.contact@gmail.com">h.ossa.contact@gmail.com</a>.</p>
+
+  <h2>2. Qué datos se usan</h2>
+  <ul>
+    <li><strong>Datos que envía el personal por Telegram:</strong> nombre y número de usuario de Telegram, fotos de tickets y facturas, conceptos, importes, fechas y proyecto del gasto.</li>
+    <li><strong>Datos de la cuenta de Google de la empresa</strong>, a los que la aplicación accede solo con la autorización de quien administra esa cuenta (ver la sección 3).</li>
+  </ul>
+
+  <h2>3. Permisos de Google que solicita y para qué</h2>
+  <table>
+    <thead><tr><th>Permiso</th><th>Para qué se usa</th></tr></thead>
+    <tbody>
+      <tr><td>Google Sheets (<code>spreadsheets</code>)</td><td>Leer y escribir los registros de gastos y los catálogos de la hoja de la empresa.</td></tr>
+      <tr><td>Google Drive (<code>drive.file</code>)</td><td>Crear y actualizar en Drive solo los archivos que la propia aplicación guarda: fotos de comprobantes, facturas recibidas y archivos de formularios.</td></tr>
+      <tr><td>Google Drive, lectura de metadatos (<code>drive.metadata.readonly</code>)</td><td>Comprobar que la carpeta de la empresa y los comprobantes existen y siguen disponibles.</td></tr>
+      <tr><td>Gmail, enviar (<code>gmail.send</code>)</td><td>Enviar desde la cuenta de la empresa el correo que solicita la factura al proveedor de un gasto.</td></tr>
+      <tr><td>Gmail, lectura (<code>gmail.readonly</code>)</td><td>Buscar el correo que la propia aplicación envió y leer solo la conversación de esa solicitud, para descargar el PDF y el XML de la factura que el proveedor responde. No se revisa el resto del correo.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>4. Cómo se usan y a quién se comparten</h2>
+  <ul>
+    <li>Los datos obtenidos de las APIs de Google se usan únicamente para las funciones descritas arriba. No se venden, no se usan para publicidad y no se usan para crear perfiles ni para entrenar modelos de inteligencia artificial.</li>
+    <li>Las fotos de los tickets que envía el personal por Telegram se mandan a la API de <strong>OpenAI</strong> para leer su contenido (importe, fecha, concepto). Cuando se usa el portal de un proveedor para pedir una factura, OpenAI recibe también capturas de pantalla de ese portal. OpenAI los procesa conforme a sus propios términos.</li>
+    <li>Los mensajes pasan por Telegram, y los registros y archivos se guardan en Google Sheets y Google Drive.</li>
+    <li>La aplicación no comparte datos con ninguna otra persona o empresa, salvo los proveedores a quienes se solicita una factura (reciben el correo de solicitud, que incluye el comprobante del gasto y los datos necesarios para facturar) y la obligación legal de entregarlos a una autoridad competente.</li>
+  </ul>
+
+  <h2>5. Dónde se guardan y por cuánto tiempo</h2>
+  <p>Los registros y comprobantes viven en la hoja y la carpeta de Google de la empresa, y el sistema guarda además una base de datos de control en un servidor de la empresa, con copias de respaldo protegidas. Se conservan mientras sean necesarios para la contabilidad y las obligaciones fiscales de la empresa, o hasta que se solicite su eliminación cuando la ley lo permita.</p>
+
+  <h2>6. Tus derechos y cómo retirar el permiso</h2>
+  <ul>
+    <li>Puedes pedir acceso, corrección o eliminación de tus datos escribiendo al correo de contacto.</li>
+    <li>El administrador de la cuenta de Google puede retirar el permiso en cualquier momento en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Al retirarlo, la aplicación deja de acceder a Google.</li>
+  </ul>
+
+  <h2>7. Declaración de uso limitado de datos de Google</h2>
+  <p>The use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>8. Cambios</h2>
+  <p>Si esta política cambia, se publicará aquí con una nueva fecha de actualización.</p>
+
+  <footer class="suave">OptimaSys-HENA · <a href="mailto:h.ossa.contact@gmail.com">h.ossa.contact@gmail.com</a></footer>
+</main>
+</body>
+</html>
